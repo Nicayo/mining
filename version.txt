@@ -19,3 +19,6 @@
 
 []  futuramente incrementar BackEnd
 
+
+V1.0.0
+
