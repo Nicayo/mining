@@ -2,9 +2,12 @@ const userName = document.getElementById("userName");
 const passWord = document.getElementById("passWord");
 const confirmPassWord = document.getElementById("confirmPassWord");
 
-var listUser = [];
+
 
 function registerUser() {
+    
+    const listUser = [];
+    
     if (validateFields() === true) {
 
         const user = {
@@ -14,6 +17,9 @@ function registerUser() {
 
         listUser.push(user);
         localStorage.setItem("user", JSON.stringify(listUser));
+        if (localStorage.getItem("user") !== null) {
+            listUser.push(user); 
+        }
         
     
     }

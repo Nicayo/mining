@@ -1,14 +1,15 @@
 []  registrar
     [] criar e armazenar dados (em um lugar que outra pessoa tambem possa mexer)
-    [] botão de voltar ao login
+    [x] botão de voltar ao login
     [x] verificar se existe um usuario com o mesmo email/senha (caso exista, mostrar usuario/senha ja existente)
     
     
 []  pagina de login
-    []criar a pagina
-    []se o usuario errar a senha (usuario/senha incorretos)
-    []se não tiver aquele usuario (usuario/senha incorretos)
-    []se tudo estiver correto (entrar na pagina inicial)
+    [x]criar a pagina
+    [x]se o usuario errar a senha (usuario/senha incorretos)
+    [x]se não tiver aquele usuario (usuario/senha incorretos)
+    [x]se tudo estiver correto (entrar na pagina inicial)
+    []saber se esta logado e não deixar logar em 2 dispositivos
 
 
 
