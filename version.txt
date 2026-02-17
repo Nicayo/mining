@@ -1,0 +1,21 @@
+[]  registrar
+    [] criar e armazenar dados (em um lugar que outra pessoa tambem possa mexer)
+    [] botão de voltar ao login
+    [] verificar se existe um usuario com o mesmo email/senha (caso exista, mostrar usuario/senha ja existente)
+    
+    
+[]  pagina de login
+
+
+
+
+[]  logout
+    
+
+
+[]  sistema de armazenamento e distribuição de informações funcionais
+
+
+
+[]  futuramente incrementar BackEnd
+
