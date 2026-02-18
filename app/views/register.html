@@ -19,6 +19,7 @@
             <div class="input-group">
                 <label>Nome de Usuário</label>
                 <input id="userName" type="text" placeholder="Digite seu nickname">
+                
             </div>
 
             <div class="input-group">
@@ -32,13 +33,30 @@
             </div>
 
             <button class="btn" onclick="registerUser()">CRIAR CONTA 🚀</button>
+            <small id="userExist" style="color: red; display: none;">
+                
+                </small>
         
 
         <div class="footer">
             Já tem conta? <a href="../views/login.html">Entrar</a>
+        
+        
         </div>
+        
+        
     </div>
+        
+    <div id="telaSucesso" class="oculto">
+            <div class="box">
+                <h2>Usuário registrado!</h2>
+                <p>Clique no botão abaixo para entrar e realizar login.</p>
+                <a href="../views/login.html"><button >Entrar</button></a>
+            </div>
+        </div>
 
+
+    
     <script src="../controllers/register.js"></script>
 </body>
 </html>

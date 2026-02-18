@@ -5,10 +5,11 @@ if (loggedUser) {
 
 const userName = document.getElementById("userName");
 const passWord = document.getElementById("passWord");
+const erroSenha = document.getElementById("erroSenha");
 
 function login() {
     if (localStorage.getItem("users") === null) {
-        alert("Usuario/senha incorretos");
+        erroSenha.style.display = "block";
         return;
     }
 
@@ -22,7 +23,7 @@ function login() {
         }
     });
 
-    if (!success) return alert("Usuario/senha incorretos");
+    if (!success) return erroSenha.style.display = "block";
 
     localStorage.setItem("loggedUser", JSON.stringify(loggedUser));
     window.location.href = "home.html";

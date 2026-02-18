@@ -6,6 +6,8 @@ if (loggedUser) {
 const userName = document.getElementById("userName");
 const passWord = document.getElementById("passWord");
 const confirmPassWord = document.getElementById("confirmPassWord");
+const userExist = document.getElementById("userExist");
+const displaySucess = document.getElementById("telaSucesso");
 
 function registerUser() {
     
@@ -25,7 +27,11 @@ function registerUser() {
         }
 
         localStorage.setItem("users", JSON.stringify(usersList));
-        alert("Novo usuário registrado, pressione o botão 'Entrar' e realize o login!");
+    
+        displaySucess.classList.remove("oculto");
+        displaySucess.classList.add("ativo");
+        
+
         userName.value = null;
         passWord.value = null;
         confirmPassWord.value = null;
@@ -36,19 +42,23 @@ function validateFields() {
 
     switch (true) {
         case userName.value.length > 20:
-            alert("Nome muito grande"); 
+            userExist.innerHTML = "Nome muito grande";
+            userExist.style.display = "block"; 
             return false;
  
         case userName.value.length < 5:
-            alert("Nome muito pequeno");  
+            userExist.innerHTML = "Nome muito pequeno";
+            userExist.style.display = "block";
             return false;
 
         case passWord.value.length < 8:
-            alert("Sua senha deve ter mais de 8 digitos");
+            userExist.innerHTML = "Sua senha deve ter mais de 8 digitos";
+            userExist.style.display = "block";
             return false;
 
         case confirmPassWord.value != passWord.value:
-            alert("Senhas diferentes.");
+            userExist.innerHTML = "Senhas diferentes";
+            userExist.style.display = "block";
             return false;
     }
 
@@ -62,7 +72,10 @@ function validateFields() {
                 duplicated = true;
             }
         });
-        if (duplicated) alert("usuario ja existente");
+        if (duplicated) {
+            userExist.innerHTML = "Usuário existente"
+            userExist.style.display = "block";
+        }
         return !duplicated;
     }
 
