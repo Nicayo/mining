@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  background: #0f0f0f;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.welcome-screen {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 420px;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 8vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.highlight {
+  color: #a3e635;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.btn {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.primary {
+  background: #a3e635;
+  color: #0f0f0f;
+}
+
+.primary:hover {
+  background: #84cc16;
+  transform: translateY(-2px);
+}
+
+.logout {
+  background: #ff1f1f;
+  color: #ffffff;
+}
+
+.logout:hover {
+  background: #cc1616;
+  transform: translateY(-2px);
+}
+
+.btn:not(.primary, .logout) {
+  background: transparent;
+  color: #e5e5e5;
+  border: 1.5px solid #333333;
+}
+
+.btn:not(.primary, .logout):hover {
+  background: #1a1a1a;
+  border-color: #555555;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 480px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn {
+    min-width: 160px;
+    padding: 1.1rem 2.2rem;
+  }
+}

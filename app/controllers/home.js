@@ -1,7 +1,13 @@
-function verify() {
-    if (localStorage.getItem("loged") === null) {
-        window.location.href = "login.html";
-    }
-
+let loggedUser = localStorage.getItem("loggedUser");
+if (!loggedUser) {
+    window.location.href = "login.html";
 }
-verify()
+loggedUser = JSON.parse(loggedUser);
+
+const usernameSpan = document.getElementById("username");
+usernameSpan.innerText = loggedUser.userName;
+
+function logout() {
+    localStorage.removeItem("loggedUser");
+    window.location.href = "login.html";
+}

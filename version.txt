@@ -2,18 +2,19 @@
     [] criar e armazenar dados (em um lugar que outra pessoa tambem possa mexer)
     [x] botão de voltar ao login
     [x] verificar se existe um usuario com o mesmo email/senha (caso exista, mostrar usuario/senha ja existente)
+    [] Alterar avisos de validacoes, parar de usar "alert" e passar a colocar a mensagem de erro/aviso abaixo do campo desejado.
     
     
-[]  pagina de login
+[x]  pagina de login
     [x]criar a pagina
     [x]se o usuario errar a senha (usuario/senha incorretos)
     [x]se não tiver aquele usuario (usuario/senha incorretos)
     [x]se tudo estiver correto (entrar na pagina inicial)
-    []saber se esta logado e não deixar logar em 2 dispositivos
+    [x]saber se esta logado e não deixar logar em 2 dispositivos
 
 
 
-[]  logout
+[x]  logout
     
 
 

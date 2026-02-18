@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mining</title>
     <link rel="stylesheet" href="../styles/home.css">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
     
+<main>
+    <div class="welcome-screen">
+      <h1>
+        Welcome back,
+        <span class="highlight" id="username">Alex</span>
+      </h1>
+
+      <div class="buttons">
+        <a onclick="logout()" class="btn logout">Logout</a>
+      </div>
+    </div>
+  </main>
     <script src="../controllers/home.js"></script>
 </body>
 </html>
