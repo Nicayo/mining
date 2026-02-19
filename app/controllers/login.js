@@ -6,10 +6,11 @@ if (loggedUser) {
 const userName = document.getElementById("userName");
 const passWord = document.getElementById("passWord");
 const erroSenha = document.getElementById("erroSenha");
+const erroSenha2 = document.getElementById("erroSenha2");
 
 function login() {
     if (localStorage.getItem("users") === null) {
-        erroSenha.style.display = "block";
+        erroSenha2.style.display = "block";
         return;
     }
 

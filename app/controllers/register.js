@@ -6,7 +6,9 @@ if (loggedUser) {
 const userName = document.getElementById("userName");
 const passWord = document.getElementById("passWord");
 const confirmPassWord = document.getElementById("confirmPassWord");
-const userExist = document.getElementById("userExist");
+const userNameError = document.getElementById("userNameError");
+const PassWordError = document.getElementById("PassWordError");
+const PassWordError2 = document.getElementById("PassWordError2");
 const displaySucess = document.getElementById("telaSucesso");
 
 function registerUser() {
@@ -42,23 +44,23 @@ function validateFields() {
 
     switch (true) {
         case userName.value.length > 20:
-            userExist.innerHTML = "Nome muito grande";
-            userExist.style.display = "block"; 
+            userNameError.innerHTML = "Nome muito grande";
+            userNameError.style.display = "block"; 
             return false;
  
         case userName.value.length < 5:
-            userExist.innerHTML = "Nome muito pequeno";
-            userExist.style.display = "block";
+            userNameError.innerHTML = "Nome muito pequeno";
+            userNameError.style.display = "block";
             return false;
 
         case passWord.value.length < 8:
-            userExist.innerHTML = "Sua senha deve ter mais de 8 digitos";
-            userExist.style.display = "block";
+            PassWordError.innerHTML = "Sua senha deve ter mais de 8 digitos";
+            PassWordError.style.display = "block";
             return false;
 
         case confirmPassWord.value != passWord.value:
-            userExist.innerHTML = "Senhas diferentes";
-            userExist.style.display = "block";
+            PassWordError2.innerHTML = "Senhas diferentes";
+            PassWordError2.style.display = "block";
             return false;
     }
 
@@ -73,8 +75,8 @@ function validateFields() {
             }
         });
         if (duplicated) {
-            userExist.innerHTML = "Usuário existente"
-            userExist.style.display = "block";
+            userNameError.innerHTML = "Usuário existente"
+            userNameError.style.display = "block";
         }
         return !duplicated;
     }

@@ -19,17 +19,21 @@
         <div class="input-group">
             <label>Nome de Usuário</label>
             <input id="userName" type="text" placeholder="Digite seu nickname">
+            <small id="erroSenha2" style="color: red; display: none;">
+                Usuário/Senha incorretos
+            </small>
         </div>
 
         <div class="input-group">
             <label>Senha</label>
             <input id="passWord" type="password" placeholder="Digite sua senha">
+            <small id="erroSenha" style="color: red; display: none;">
+                Usuário/Senha incorretos
+            </small>
         </div>
 
         <button onclick="login()" class="btn">ENTRAR 🚀</button>
-        <small id="erroSenha" style="color: red; display: none;">
-            Usuário/Senha incorretos
-        </small>
+        
 
 
         <div class="footer">
