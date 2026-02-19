@@ -10,29 +10,27 @@
 <canvas id="particles"></canvas>
   <main class="container" >
 
-    <div class="header" style="text-align: center;">
-      <h1 style="text-align: center;">
-        Welcome back,
-        <span class="highlight" id="username">Alex</span>
-      </h1>
-      <a href="mining.html" class="btn primary big">
-        ⛏ Go Mining
-      </a>
+    <div class="container-center">
+      <div>
+        <h1>Welcome back,<span class="highlight" id="username">Alex</span></h1>
+      </div>
+
+      <div>
+        <a href="mining.html" class="btn primary big">
+          ⛏ Go Mining
+        </a>
+      </div>
+
+      <div>
+        <button onclick="logout()" class="btn logout">
+          Logout
+        </button>
+      </div>
     </div>
-
-    <section class="center-content" style="margin-top: 100px; margin-bottom: 250px;">
-      
-    </section>
-
-    <footer class="footer">
-      <button onclick="logout()" class="btn logout">
-        Logout
-      </button>
-    </footer>
 
   </main>
 
-    <script src="../controllers/home.js"></script>
+  <script src="../controllers/home.js"></script>
 
 </body>
 </html>
