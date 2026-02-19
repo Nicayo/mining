@@ -1,3 +1,5 @@
+
+
 let loggedUser = localStorage.getItem("loggedUser");
 if (!loggedUser) {
     window.location.href = "login.html";
