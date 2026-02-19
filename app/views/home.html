@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mining</title>
-    <link rel="stylesheet" href="../styles/home.css">
-    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../styles/home.css">
 </head>
 <body>
-    
-<main>
-    <div class="welcome-screen">
-      <h1>
+<canvas id="particles"></canvas>
+  <main class="container" >
+
+    <div class="header" style="text-align: center;">
+      <h1 style="text-align: center;">
         Welcome back,
         <span class="highlight" id="username">Alex</span>
       </h1>
-
-      <div class="buttons">
-        <a onclick="logout()" class="btn logout">Logout</a>
-      </div>
+      <a href="mining.html" class="btn primary big">
+        ⛏ Go Mining
+      </a>
     </div>
+
+    <section class="center-content" style="margin-top: 100px; margin-bottom: 250px;">
+      
+    </section>
+
+    <footer class="footer">
+      <button onclick="logout()" class="btn logout">
+        Logout
+      </button>
+    </footer>
+
   </main>
+
     <script src="../controllers/home.js"></script>
+
 </body>
 </html>
