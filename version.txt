@@ -24,6 +24,12 @@
 
 []  futuramente incrementar BackEnd
 
+[]Mining
+    [x]criar uma barra de experiencia funcional
+    [x] Ultimo minerio
+    [x] Nome e nivel
+    [x] botão logout
+
 
 V1.0.0
 

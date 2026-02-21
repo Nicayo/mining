@@ -9,6 +9,38 @@
 </head>
 <body>
     
+        <div id="username1">
+            <h1 id="username" ></h1>
+            
+            
+
+            <progress id="nivelBar" max="100" value="0"></progress>
+            <div id="nivelInfo">
+                <p id="nivel">lvl</p>
+                <p id="nivelNumber">0</p>
+            </div>
+        </div>
+
+            <button onclick="logout()" class="btn logout" id="logoutBtn">Logout</button>
+
+    <div id="clickButton">       
+        <div id="display" style="text-align: center; ">
+            <img id="img" src="" alt="">
+        </div>
+
+            <div id="ultimoMinerioBox">
+                <p id="ultimoMinerioTitulo">Último minério</p>
+                <p id="ultimoMinerioNome">Mining!</p>
+            </div>
+
+        <div id="botaoCarregamento">
+
+            <div style="margin-top: 500px;"><progress id="bar" max="100" value="0"></progress></div>
+            <button id="minerar" onclick="minerar()">Mining!</button>
+            
+        </div>
+
+    </div>
 
     <script src="../controllers/mining.js"></script>
 </body>

@@ -1,0 +1,246 @@
+body {
+    background-color: grey;
+}
+
+#botaoCarregamento {
+    text-align: center;
+    margin: 100px;
+}
+
+#minerar {
+    
+    justify-content: center;
+    align-items: center;
+
+    width: 120px;
+    height: 120px;
+
+    background: linear-gradient(145deg, rgb(69, 202, 17), rgb(50, 170, 10));
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 30px;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    box-shadow: 
+        0 8px 0 rgb(40, 140, 8),
+        0 12px 20px rgba(0,0,0,0.3);
+        margin-top: 50px;
+}
+progress {
+    width: 300px;
+    height: 25px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Fundo da barra (Chrome, Edge, Safari) */
+progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Parte preenchida (Chrome, Edge, Safari) */
+progress::-webkit-progress-value {
+    background: linear-gradient(
+        90deg,
+        #45ca11,
+        #32aa0a
+    );
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+    background: linear-gradient(
+        90deg,
+        #45ca11,
+        #32aa0a
+    );
+    border-radius: 20px;
+}
+
+/* Efeito ao passar o mouse */
+#minerar:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 10px 0 rgb(40, 140, 8),
+        0 15px 25px rgba(0,0,0,0.4);
+}
+
+/* Efeito ao clicar */
+#minerar:active {
+    transform: translateY(5px);
+    box-shadow: 
+        0 3px 0 rgb(40, 140, 8),
+        0 6px 10px rgba(0,0,0,0.3);
+}
+
+#username1 {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding: 15px 20px;
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Nome do usuário */
+#username {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Container do nível */
+#nivelInfo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+/* Texto "lvl" */
+#nivel {
+    font-size: 16px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Número do nível */
+#nivelNumber {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #45ca11;
+}
+
+/* Barra de progresso */
+#nivelBar {
+    width: 180px;
+    height: 12px;
+    margin-top: 8px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Fundo da barra */
+#nivelBar::-webkit-progress-bar {
+    background-color: #2c2c2c;
+    border-radius: 20px;
+}
+
+/* Parte preenchida */
+#nivelBar::-webkit-progress-value {
+    background: linear-gradient(90deg, #45ca11, #32aa0a);
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+/* Firefox */
+#nivelBar::-moz-progress-bar {
+    background: linear-gradient(90deg, #45ca11, #32aa0a);
+    border-radius: 20px;
+}
+#ultimoMinerioBox {
+    position: fixed;
+    top: 300px;
+    left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 15px 20px;
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Título */
+#ultimoMinerioTitulo {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+/* Nome do minério */
+#ultimoMinerioNome {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+
+    background: linear-gradient(90deg, #45ca11, #32aa0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#logoutBtn {
+    position: fixed;
+    top: 150px; /* ajuste fino dependendo da altura do box */
+    right: 90px;
+
+    padding: 8px 18px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: white;
+    background: linear-gradient(145deg, #ff4d4d, #cc0000);
+
+    border: none;
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    box-shadow:
+        0 5px 0 #990000,
+        0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Hover */
+#logoutBtn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 7px 0 #990000,
+        0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Click */
+#logoutBtn:active {
+    transform: translateY(3px);
+    box-shadow:
+        0 2px 0 #990000,
+        0 4px 8px rgba(0,0,0,0.3);
+}
