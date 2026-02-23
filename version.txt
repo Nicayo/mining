@@ -24,7 +24,8 @@
 
 []  futuramente incrementar BackEnd
 
-[]Mining
+
+[x]Mining
     [x]criar uma barra de experiencia funcional
     [x] Ultimo minerio
     [x] Nome e nivel
